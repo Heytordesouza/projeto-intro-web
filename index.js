@@ -42,8 +42,9 @@ const nome3 = "Beltrano";
 const idade3 = 27;
 const verificouEmail3 = true;
 _______________________________________________________________________________
+*/
 
-const modelo1 = "Chevrolet Onix 1.0 MT"
+/*const modelo1 = "Chevrolet Onix 1.0 MT"
 const valor1 = 78.699
 const km1 = true
 const cores1 = ["Preto", "Branco", "Cinza", "Prata", "Azul"]
@@ -56,9 +57,9 @@ const cores2 = ["Preto", "Prata", "Branco", "Cinza"]
 const modelo3 = "Renault Logan Authentique Flex 1.0 2018"
 const valor3 = 46.367
 const km3 = false
-const cores3 = ["Preto", "Prata", "Branco", "Vermelho"]
+const cores3 = ["Preto", "Prata", "Branco", "Vermelho"]*/
 
-3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. 
+/*3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. 
 Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
 💡A média deve ser igual à soma dos itens, dividida pelo total de itens.*/
 
@@ -95,8 +96,9 @@ FULANO
 idade: 33
 verificou email?: false
 projetos: ["Projeto de HTML", "Projeto de CSS", "Projeto React"]
+*/
 
-console.log(`
+/*console.log(`
 ${modelo1.toUpperCase()}
 Valor: R$${valor1}
 O Carro é 0Km? ${km1}
@@ -110,9 +112,9 @@ Suas cores são: ${cores2}
 ${modelo3.toUpperCase()}
 Valor: R$${valor3}
 O Carro é 0Km? ${km3}
-Suas cores são: ${cores3}`)
+Suas cores são: ${cores3}`)*/
 
-Semana 2
+/*Semana 2
 
 1. Transforme os itens que criamos nas últimas semanas em objetos.
 
@@ -131,24 +133,24 @@ objeto1 = {
 
 
 carro1 = {
-modelo1: "Chevrolet Onix 1.0 MT",
-valor1: 78.699,
-km1: true,
-cores1: ["Preto", "Branco", "Cinza", "Prata", "Azul"]
+  modelo: "Chevrolet Onix 1.0 MT",
+  valor: 78.699,
+  km: true,
+  cores: ["Preto", "Branco", "Cinza", "Prata", "Azul"]
 }
 
 carro2 = {
-modelo2: "Hyundai HB20 Sense 1.0",
-valor2: 76.699,
-km2: true,
-cores2: ["Preto", "Prata", "Branco", "Cinza"]
+  modelo: "Hyundai HB20 Sense 1.0",
+  valor: 76.699,
+  km: true,
+  cores: ["Preto", "Prata", "Branco", "Cinza"]
 }
 
 carro3 = {
-modelo3: "Renault Logan Authentique Flex 1.0 2018",
-valor3: 46.367,
-km3: false,
-cores3: ["Preto", "Prata", "Branco", "Vermelho"]
+  modelo: "Renault Logan Authentique Flex 1.0 2018",
+  valor: 46.367,
+  km: false,
+  cores: ["Preto", "Prata", "Branco", "Vermelho"]
 }
 
 
@@ -181,7 +183,7 @@ Ao fim, você deve ter algo parecido com isso:
 
 //carros.push(carro1, carro2, carro3)
 
-//console.log(carros)
+
 
 /*4. Altere o item “Adicione os novos objetos no array de objetos, 
 utilizando o push()” (item 3), para criar uma verificação antes de dar o push. 
@@ -191,24 +193,103 @@ Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for
 5. Crie uma condição else, que, em caso de valor false na condição acima, 
 exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push*/
 
-if(carro1.km1) {
+if(carro1.km===true) {
   carros.push(carro1)
-  alert(`${carro1.modelo1} foi adicionado ao array`)
+  alert(`${carro1.modelo} foi adicionado ao array`)
 }else {
-  alert(`${carro1.modelo1} não foi adicionado ao array`)
+  alert(`${carro1.modelo} não foi adicionado ao array`)
 }
 
-if(carro2.km2) {
+if(carro2.km===true) {
   carros.push(carro2)
-  alert(`${carro2.modelo2} foi adicionado ao array`)
+  alert(`${carro2.modelo} foi adicionado ao array`)
 }else {
-  alert(`${carro2.modelo2} não foi adicionado ao array`)
+  alert(`${carro2.modelo} não foi adicionado ao array`)
 }
 
-if(carro3.km3) {
+if(carro3.km===true) {
   carros.push(carro3)
-  alert(`${carro3.modelo3} foi adicionado ao array`)
+  alert(`${carro3.modelo} foi adicionado ao array`)
 }else {
-  alert(`${carro3.modelo3} não foi adicionado ao array`)
+  alert(`${carro3.modelo} não foi adicionado ao array`)
 }
+
+//console.log(carros)
+
+//Semana 3
+
+/*1. Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2, 
+altere a forma que a característica de array dos itens seja escrita como um laço que guarde 
+todos os valores da propriedade array do objeto em uma mesma string. Utilize esta string no relatório.
+💡 Chamamos este processo de reescrever um código já escrito, de refatoração.
+
+Exemplo:
+//ANTES 
+FULANO
+idade: 33
+verificou email?: false
+projetos: ["Projeto de HTML", "Projeto de CSS", "Projeto React"] 
+
+//DEPOIS
+FULANO
+idade: 33
+verificou email?: false
+projetos: "Projeto de HTML,Projeto de CSS,Projeto React" */
+
+for(let i in carros){
+carros[i].cores = (carros[i].cores).join(', ')
+}
+console.log(carros)
+
+
+/*2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. 
+Ou seja, você não deve mais imprimir individualmente cada item do relatório. 
+Cada item deve ser exibido a partir de uma iteração do laço. 
+Para testar, adicione mais um item ao array de objetos, e verifique se ele é exibido corretamente.
+
+//ANTES 
+console.log(elementos[0].item);
+
+//DEPOIS
+FULANO
+for(elemento in elementos){
+  console.log(elemento.item);
+}*/
+
+
+for(let i in carros){
+  carros[i].cores += ", Vermelho";
+}
+
+for(let i of carros){
+   console.log(`Modelo: ${i.modelo}
+Valor: ${i.valor}
+0 Km: ${i.km}
+Cores: ${i.cores}`)
+}
+
+
+//3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
+
+const stringRelatorio = carros.filter((objeto) => {
+  return objeto.modelo === "Hyundai HB20 Sense 1.0"
+})
+
+console.log(stringRelatorio)
+
+
+/*4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, 
+e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. 
+Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.*/
+
+function retornarObjeto(array, string){
+  for(let i in carros){
+    if(array[i].modelo === string){
+      return console.log(array[i])
+    }
+  }
+  return alert("Nenhum item foi encontrado")
+}
+
+retornarObjeto(carros,"Chevrolet Onix 1.0 MT")
 
