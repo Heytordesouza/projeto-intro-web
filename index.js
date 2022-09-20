@@ -271,12 +271,16 @@ Cores: ${i.cores}`)
 
 //3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
 
-const stringRelatorio = carros.filter((objeto) => {
-  return objeto.modelo === "Hyundai HB20 Sense 1.0"
-})
+function criarString(objeto){
+  for(let i of objeto){
+    console.log(`Modelo: ${i.modelo}
+Valor: ${i.valor}
+0 Km: ${i.km}
+Cores: ${i.cores}`)
+}
+}
 
-console.log(stringRelatorio)
-
+criarString(carros)
 
 /*4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, 
 e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. 
