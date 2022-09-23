@@ -247,7 +247,7 @@ Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for
 5. Crie uma condição else, que, em caso de valor false na condição acima, 
 exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push*/
 
-if(filme1.indicadoOscar===true) {
+/*if(filme1.indicadoOscar===true) {
   filmes.push(filme1)
   alert(`${filme1.filme} foi adicionado ao array`)
 }else {
@@ -280,7 +280,7 @@ if(filme5.indicadoOscar===true) {
   alert(`${filme5.filme} foi adicionado ao array`)
 }else {
   alert(`${filme5.filme} não foi adicionado ao array`)
-}
+}*/
 
 //console.log(filmes)
 
@@ -329,7 +329,7 @@ for(elemento in elementos){
 }*/
 
 
-for(let i of filmes){
+/*for(let i of filmes){
   console.log(`Filme: ${i.filme}
 Ano de Lançamento: ${i.anoLancamento}
 Bilheteria: US$ ${i.bilheteriaUS$}
@@ -340,7 +340,7 @@ Gênero: ${i.genero}`)
 
 //3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
 
-function criarString(objeto){
+/*function criarString(objeto){
   for(let i of objeto){
     console.log(`Filme: ${i.filme}
 Ano de Lançamento: ${i.anoLancamento}
@@ -356,7 +356,7 @@ criarString(filmes)
 e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. 
 Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.*/
 
-function retornarObjeto(array, prompt){
+/*function retornarObjeto(array, prompt){
   for(let i in filmes){
     let maiuscula = array[i].filme.toUpperCase()
     if(maiuscula === prompt){
@@ -367,5 +367,5 @@ function retornarObjeto(array, prompt){
   return alert("Nenhum item foi encontrado")
 }
 
-retornarObjeto(filmes, prompt("Digite um filme").toUpperCase())
+retornarObjeto(filmes, prompt("Digite um filme").toUpperCase())*/
 
