@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: block;
+    background-color: black;
+    height: 50px;
+}
+
+header p{
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    font-family: arial;
+    font-size: 25px;
+}
+
+main{
+    color: white;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.input{
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Poster{
+    display: table-cell;
+    width: 150px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+
+.Filme{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: red;
+    display: table;
+}
+
+
+.Titulo{
+    font-family: arial;
+    text-align: center;
+    margin: 20px;
+}
+
+ul{
+    margin: 30px;
+    display: table-cell;
+    float: left;
+    width: 350px;
+    font-family: arial;
+    font-size: 18px;
+}
+
+
+
+
+    
+
