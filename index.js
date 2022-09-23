@@ -21,9 +21,10 @@ Recomendamos, pensando no futuro, que você também pense em dados que podem
 receber múltiplos valores de uma só vez. Não vamos usar estes dados até mais 
 pra frente, mas é legal já ter uma ideia.*/
 
-//const modelo = "Modelo do carro"
-//const valor = Number "Valor do carro"
-//const km = boolean "Se o carro é 0Km"
+//const Filme = "Nome do Filme"
+//const anoLancamento = "Ano de lançamento"
+//const BilheteriaUS$ = Number "Bilheteria"
+//const indicadoOscar = boolean "Se concorreu ao oscar"
 
 /*2. Agora, crie três conjuntos de variáveis utilizando as características 
 que você definiu acima. Lembre-se que deve ser o mesmo tipo de item, 
@@ -42,29 +43,49 @@ const nome3 = "Beltrano";
 const idade3 = 27;
 const verificouEmail3 = true;
 _______________________________________________________________________________
-*/
 
-/*const modelo1 = "Chevrolet Onix 1.0 MT"
-const valor1 = 78.699
-const km1 = true
-const cores1 = ["Preto", "Branco", "Cinza", "Prata", "Azul"]
 
-const modelo2 = "Hyundai HB20 Sense 1.0"
-const valor2 = 76.699
-const km2 = true
-const cores2 = ["Preto", "Prata", "Branco", "Cinza"]
+const filme1 = "Homem de Ferro"
+const anoLancamento1 = 2008
+const bilheteriaUS$1 = 585796247.00
+const indicadoOscar1 = true
+const genero1 = ["Ação", "Aventura", "Ficção Científica"]
 
-const modelo3 = "Renault Logan Authentique Flex 1.0 2018"
-const valor3 = 46.367
-const km3 = false
-const cores3 = ["Preto", "Prata", "Branco", "Vermelho"]*/
 
-/*3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. 
+const filme2 = "Homem de Ferro 2"
+const anoLancamento2 = 2010
+const bilheteriaUS$2 = 623933331.00
+const indicadoOscar2 = true
+const genero2 = ["Ação", "Aventura", "Ficção Científica"]
+
+
+const filme3 = "Capitão América: O Primeiro Vingador"
+const anoLancamento3 = 2011
+const bilheteriaUS$3 = 370569774.00
+const indicadoOscar3 = false
+const genero3 = ["Ação", "Aventura", "Ficção Científica", "Guerra"]
+
+
+const filme4 = "Thor"
+const anoLancamento4 = 2011
+const bilheteriaUS$4 = 449326618.00
+const indicadoOscar4 = false
+const genero4 = ["Ação", "Aventura", "Fantasia"]
+
+
+const filme5 = "Os Vingadores"
+const anoLancamento5 = 2012
+const bilheteriaUS$5 = 1518815515.00
+const indicadoOscar5 = true
+const genero5 = ["Ação", "Aventura", "Ficção Científica"]
+
+
+3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. 
 Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
 💡A média deve ser igual à soma dos itens, dividida pelo total de itens.*/
 
-//const media = ((valor1 + valor2 + valor3)/3)
-//console.log(media) //67.255
+//const media = ((bilheteriaUS$1 + bilheteriaUS$2 + bilheteriaUS$3 + bilheteriaUS$4 + bilheteriaUS$5)/5)
+//console.log(media) //709.688.297,00
 
 
 /*4. Com um console.log, imprima o resultado de uma operação lógica que checa se 
@@ -74,8 +95,8 @@ const verificaEmails = verificouEmail1 && verificouEmail2 && verificouEmail3;
 console.log(verificaEmails);*/
 // nesse caso, vai imprimir false, pois verificouEmail1 === false*/
 
-//const kms = Boolean(km1 & km2 & km3)
-//console.log(kms) //false
+//const indicadoOscar = Boolean(indicadoOscar1 & indicadoOscar2 & indicadoOscar3 & indicadoOscar4 & indicadoOscar5)
+//console.log(indicadoOscar) //false
 
 
 /*5. Crie pelo menos mais uma característica para o item que você criou. 
@@ -86,7 +107,7 @@ const idade; //number
 const verificouEmail; //boolean
 const projetos; //array de strings*/
 
-//Suas cores
+//Seus generos
 
 /*6. Exiba um relatório utilizando console.log(), mostrando todos os dados de 
 cada um dos itens criados até aqui
@@ -98,21 +119,37 @@ verificou email?: false
 projetos: ["Projeto de HTML", "Projeto de CSS", "Projeto React"]
 */
 
+
 /*console.log(`
-${modelo1.toUpperCase()}
-Valor: R$${valor1}
-O Carro é 0Km? ${km1}
-Suas cores são: ${cores1}
+${filme1.toUpperCase()}
+Ano de Lançamento: ${anoLancamento1}
+Bilheteria: US$ ${bilheteriaUS$1}
+Indicado ao Oscar: ${indicadoOscar1}
+Gênero: ${genero1}
 
-${modelo2.toUpperCase()}
-Valor: R$${valor2}
-O Carro é 0Km? ${km2}
-Suas cores são: ${cores2}
+${filme2.toUpperCase()}
+Ano de Lançamento: ${anoLancamento2}
+Bilheteria: US$ ${bilheteriaUS$2}
+Indicado ao Oscar: ${indicadoOscar2}
+Gênero: ${genero2}
 
-${modelo3.toUpperCase()}
-Valor: R$${valor3}
-O Carro é 0Km? ${km3}
-Suas cores são: ${cores3}`)*/
+${filme3.toUpperCase()}
+Ano de Lançamento: ${anoLancamento3}
+Bilheteria: US$ ${bilheteriaUS$3}
+Indicado ao Oscar: ${indicadoOscar3}
+Gênero: ${genero3}
+
+${filme4.toUpperCase()}
+Ano de Lançamento: ${anoLancamento4}
+Bilheteria: US$ ${bilheteriaUS$4}
+Indicado ao Oscar: ${indicadoOscar4}
+Gênero: ${genero4}
+
+${filme5.toUpperCase()}
+Ano de Lançamento: ${anoLancamento5}
+Bilheteria: US$ ${bilheteriaUS$5}
+Indicado ao Oscar: ${indicadoOscar5}
+Gênero: ${genero5}
 
 /*Semana 2
 
@@ -131,32 +168,49 @@ objeto1 = {
   verificouEmail: false
 } */
 
-
-carro1 = {
-  modelo: "Chevrolet Onix 1.0 MT",
-  valor: 78.699,
-  km: true,
-  cores: ["Preto", "Branco", "Cinza", "Prata", "Azul"]
+filme1 = {  
+  filme: "Homem de Ferro",
+  anoLancamento: 2008,
+  bilheteriaUS$: 585796247.00,
+  indicadoOscar: true,
+  genero: ["Ação", "Aventura", "Ficção Científica"]
 }
 
-carro2 = {
-  modelo: "Hyundai HB20 Sense 1.0",
-  valor: 76.699,
-  km: true,
-  cores: ["Preto", "Prata", "Branco", "Cinza"]
+filme2 = {
+ filme: "Homem de Ferro 2",
+ anoLancamento: 2010,
+ bilheteriaUS$: 623933331.00,
+ indicadoOscar: true,
+ genero: ["Ação", "Aventura", "Ficção Científica"]
 }
 
-carro3 = {
-  modelo: "Renault Logan Authentique Flex 1.0 2018",
-  valor: 46.367,
-  km: false,
-  cores: ["Preto", "Prata", "Branco", "Vermelho"]
+filme3 = {
+ filme: "Capitão América: O Primeiro Vingador",
+ anoLancamento: 2011,
+ bilheteriaUS$: 370569774.00,
+ indicadoOscar: false,
+ genero: ["Ação", "Aventura", "Ficção Científica", "Guerra"]
 }
 
+filme4 = {
+ filme: "Thor",
+ anoLancamento: 2011,
+ bilheteriaUS$: 449326618.00,
+ indicadoOscar: false,
+ genero: ["Ação", "Aventura", "Fantasia"]
+}
+
+filme5 = {
+ filme: "Os Vingadores",
+ anoLancamento: 2012,
+ bilheteriaUS$: 1518815515.00,
+ indicadoOscar: true,
+ genero: ["Ação", "Aventura", "Ficção Científica"]
+}
 
 //2. Crie um array para guardar os objetos. Este array deve estar vazio, por enquanto;
 
-const carros = []
+const filmes = []
 
 
 /*3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, 
@@ -181,7 +235,7 @@ Ao fim, você deve ter algo parecido com isso:
   },
 ]*/
 
-//carros.push(carro1, carro2, carro3)
+//filmes.push(filme1, filme2, filme3, filme4, filme5)
 
 
 
@@ -193,28 +247,42 @@ Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for
 5. Crie uma condição else, que, em caso de valor false na condição acima, 
 exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push*/
 
-if(carro1.km===true) {
-  carros.push(carro1)
-  alert(`${carro1.modelo} foi adicionado ao array`)
+if(filme1.indicadoOscar===true) {
+  filmes.push(filme1)
+  alert(`${filme1.filme} foi adicionado ao array`)
 }else {
-  alert(`${carro1.modelo} não foi adicionado ao array`)
+  alert(`${filme1.filme} não foi adicionado ao array`)
 }
 
-if(carro2.km===true) {
-  carros.push(carro2)
-  alert(`${carro2.modelo} foi adicionado ao array`)
+if(filme2.indicadoOscar===true) {
+  filmes.push(filme2)
+  alert(`${filme2.filme} foi adicionado ao array`)
 }else {
-  alert(`${carro2.modelo} não foi adicionado ao array`)
+  alert(`${filme2.filme} não foi adicionado ao array`)
 }
 
-if(carro3.km===true) {
-  carros.push(carro3)
-  alert(`${carro3.modelo} foi adicionado ao array`)
+if(filme3.indicadoOscar===true) {
+  filmes.push(filme3)
+  alert(`${filme3.filme} foi adicionado ao array`)
 }else {
-  alert(`${carro3.modelo} não foi adicionado ao array`)
+  alert(`${filme3.filme} não foi adicionado ao array`)
 }
 
-//console.log(carros)
+if(filme4.indicadoOscar===true) {
+  filmes.push(filme4)
+  alert(`${filme4.filme} foi adicionado ao array`)
+}else {
+  alert(`${filme4.filme} não foi adicionado ao array`)
+}
+
+if(filme5.indicadoOscar===true) {
+  filmes.push(filme5)
+  alert(`${filme5.filme} foi adicionado ao array`)
+}else {
+  alert(`${filme5.filme} não foi adicionado ao array`)
+}
+
+//console.log(filmes)
 
 //Semana 3
 
@@ -236,10 +304,10 @@ idade: 33
 verificou email?: false
 projetos: "Projeto de HTML,Projeto de CSS,Projeto React" */
 
-for(let i in carros){
-carros[i].cores = (carros[i].cores).join(', ')
+/*for(let i in filmes){
+filmes[i].genero = (filmes[i].genero).join(', ')
 }
-console.log(carros)
+console.log(filmes)
 
 
 /*2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. 
@@ -256,16 +324,17 @@ for(elemento in elementos){
   console.log(elemento.item);
 }*/
 
-
-for(let i in carros){
+/*for(let i in carros){
   carros[i].cores += ", Vermelho";
-}
+}*/
 
-for(let i of carros){
-   console.log(`Modelo: ${i.modelo}
-Valor: ${i.valor}
-0 Km: ${i.km}
-Cores: ${i.cores}`)
+
+for(let i of filmes){
+  console.log(`Filme: ${i.filme}
+Ano de Lançamento: ${i.anoLancamento}
+Bilheteria: US$ ${i.bilheteriaUS$}
+Indicado ao Oscar: ${i.indicadoOscar}
+Gênero: ${i.genero}`)
 }
 
 
@@ -273,27 +342,30 @@ Cores: ${i.cores}`)
 
 function criarString(objeto){
   for(let i of objeto){
-    console.log(`Modelo: ${i.modelo}
-Valor: ${i.valor}
-0 Km: ${i.km}
-Cores: ${i.cores}`)
+    console.log(`Filme: ${i.filme}
+Ano de Lançamento: ${i.anoLancamento}
+Bilheteria: US$ ${i.bilheteriaUS$}
+Indicado ao Oscar: ${i.indicadoOscar}
+Gênero: ${i.genero}`)
 }
 }
 
-criarString(carros)
+criarString(filmes)
 
 /*4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, 
 e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. 
 Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.*/
 
-function retornarObjeto(array, string){
-  for(let i in carros){
-    if(array[i].modelo === string){
-      return console.log(array[i])
+function retornarObjeto(array, prompt){
+  for(let i in filmes){
+    let maiuscula = array[i].filme.toUpperCase()
+    if(maiuscula === prompt){
+      console.log(array[i])
+      return alert(`O filme ${array[i].filme} foi encontrado`)
     }
   }
   return alert("Nenhum item foi encontrado")
 }
 
-retornarObjeto(carros,"Chevrolet Onix 1.0 MT")
+retornarObjeto(filmes, prompt("Digite um filme").toUpperCase())
 
