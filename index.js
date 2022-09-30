@@ -247,42 +247,43 @@ Isto é, o objeto só deve ser adicionado ao array se a propriedade booleana for
 5. Crie uma condição else, que, em caso de valor false na condição acima, 
 exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push*/
 
-/*if(filme1.indicadoOscar===true) {
-  filmes.push(filme1)
-  alert(`${filme1.filme} foi adicionado ao array`)
-}else {
-  alert(`${filme1.filme} não foi adicionado ao array`)
-}
+// if(filme1.indicadoOscar===true) {
+//   filmes.push(filme1)
+//   alert(`${filme1.filme} foi adicionado ao array`)
+// }else {
+//   alert(`${filme1.filme} não foi adicionado ao array`)
+// }
 
-if(filme2.indicadoOscar===true) {
-  filmes.push(filme2)
-  alert(`${filme2.filme} foi adicionado ao array`)
-}else {
-  alert(`${filme2.filme} não foi adicionado ao array`)
-}
+// if(filme2.indicadoOscar===true) {
+//   filmes.push(filme2)
+//   alert(`${filme2.filme} foi adicionado ao array`)
+// }else {
+//   alert(`${filme2.filme} não foi adicionado ao array`)
+// }
 
-if(filme3.indicadoOscar===true) {
-  filmes.push(filme3)
-  alert(`${filme3.filme} foi adicionado ao array`)
-}else {
-  alert(`${filme3.filme} não foi adicionado ao array`)
-}
+// if(filme3.indicadoOscar===true) {
+//   filmes.push(filme3)
+//   alert(`${filme3.filme} foi adicionado ao array`)
+// }else {
+//   alert(`${filme3.filme} não foi adicionado ao array`)
+// }
 
-if(filme4.indicadoOscar===true) {
-  filmes.push(filme4)
-  alert(`${filme4.filme} foi adicionado ao array`)
-}else {
-  alert(`${filme4.filme} não foi adicionado ao array`)
-}
+// if(filme4.indicadoOscar===true) {
+//   filmes.push(filme4)
+//   alert(`${filme4.filme} foi adicionado ao array`)
+// }else {
+//   alert(`${filme4.filme} não foi adicionado ao array`)
+// }
 
-if(filme5.indicadoOscar===true) {
-  filmes.push(filme5)
-  alert(`${filme5.filme} foi adicionado ao array`)
-}else {
-  alert(`${filme5.filme} não foi adicionado ao array`)
-}*/
+// if(filme5.indicadoOscar===true) {
+//   filmes.push(filme5)
+//   alert(`${filme5.filme} foi adicionado ao array`)
+// }else {
+//   alert(`${filme5.filme} não foi adicionado ao array`)
+// }
 
 //console.log(filmes)
+
 
 //Semana 3
 
@@ -304,10 +305,11 @@ idade: 33
 verificou email?: false
 projetos: "Projeto de HTML,Projeto de CSS,Projeto React" */
 
-/*for(let i in filmes){
-filmes[i].genero = (filmes[i].genero).join(', ')
-}
-console.log(filmes)
+// for(let i of filmes){
+// i.genero = i.genero.join(", ")
+// }
+
+// console.log(filmes)
 
 
 /*2. Ainda no relatório, altere-o para que ele seja criado utilizando um laço. 
@@ -329,35 +331,31 @@ for(elemento in elementos){
 }*/
 
 
-/*for(let i of filmes){
-  console.log(`Filme: ${i.filme}
-Ano de Lançamento: ${i.anoLancamento}
-Bilheteria: US$ ${i.bilheteriaUS$}
-Indicado ao Oscar: ${i.indicadoOscar}
-Gênero: ${i.genero}`)
-}
+// for(let filme of filmes){
+//   for(descricao in filme){
+//     console.log(`${descricao}: ${filme[descricao]}`)
+//   }
+//}
 
 
 //3. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
 
 /*function criarString(objeto){
   for(let i of objeto){
-    console.log(`Filme: ${i.filme}
-Ano de Lançamento: ${i.anoLancamento}
-Bilheteria: US$ ${i.bilheteriaUS$}
-Indicado ao Oscar: ${i.indicadoOscar}
-Gênero: ${i.genero}`)
-}
+    for(descricao in i){
+      console.log(`${descricao}: ${i[descricao]}`)
+    }
+  }
 }
 
-criarString(filmes)
+criarString(filmes)*/
 
 /*4. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, 
 e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. 
 Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.*/
 
 /*function retornarObjeto(array, prompt){
-  for(let i in filmes){
+  for(let i in array){
     let maiuscula = array[i].filme.toUpperCase()
     if(maiuscula === prompt){
       console.log(array[i])
@@ -369,3 +367,13 @@ Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrad
 
 retornarObjeto(filmes, prompt("Digite um filme").toUpperCase())*/
 
+
+
+
+
+
+// function pesquisa (array,  busca){
+//   const result = arrayStep.find( resposta => resposta.tipo === 'Quimico' )
+//   console.log(result)
+//   return result
+//   }

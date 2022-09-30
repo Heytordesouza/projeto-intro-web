@@ -29,6 +29,8 @@ header p{
 }
 
 main{
+    background-image: url(./Imagens/Fundo.jpg);
+    background-attachment: local;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,10 +42,11 @@ main{
     display: flex;
     flex-direction: row;
     width: 68vw;
-    background-color: red;
+    background-color: black;
+    border: 1px solid red;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
 }
 
 .poster{
@@ -64,6 +67,7 @@ main{
     padding-left: 10px;
     font-size: 1.8vw;
     padding-top: 3vh;
+    color: white;
 }
 
 .tituloCentralizado{
@@ -74,6 +78,7 @@ main{
     justify-items: center;
     padding-left: 10px;
     font-size: 1.8vw;
+    color: white;
 }
 
 ul{
@@ -94,38 +99,83 @@ footer{
 @media screen and (min-device-width: 800px) and (max-device-width: 1200px) {
 
     .filme{
-        width: 52vw;
+        width: 55%;
     }
 
     .poster{
-        width: 20%;
-        height: 20%;
-        padding: 1vw;
-        padding-left: 2vw;
+        width: 22%;
+        height: 22%;
+        padding-left: 3%;
     }
 
+    .bloco{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 2.2vh;
+    }
+
+    ul{
+      width: 100%;
+      font-family: arial;
+      font-size: 1.8vw;
+      margin-left: 20%;
+    }
+    
+    .titulo{
+        width: 100%;
+        font-size: 1.7vw;
+        padding-top: 0;
+        padding-right: 8%;
+    }
+
+    .tituloCentralizado{
+        width: 100%;
+        font-size: 1.7vw;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-device-width: 800px) {
+
+    .filme{
+        flex-direction: column;
+        width: 60%;
+        padding-bottom: 3%;
+        padding-top: 1%;
+    }
+    
+    .poster{
+        width: 60%;
+        height: 65%;
+        padding: 2%;
+    }
+    
     .bloco{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80vw;
-        gap: 1.4vh;
-        padding: 2vh;
+        gap: 2vh;
     }
-
+    
     .titulo{
-        width: 30vw;
-        font-size: 1.7vw;
-        padding-top: 0;
+        width: 100%;
+        font-size: 3vw;
+        padding-top: 1vh;
     }
-
+    
     .tituloCentralizado{
-        width: 30vw;
-        font-size: 1.7vw;
+        width: 100%;
+        font-size: 3vw;
+    }
+    
+    ul{
+        width: 90%;
+        font-family: arial;
+        font-size: 2.6vw;
+        margin-left: 10vw;
     }
 }
-
-
-
-    
 
