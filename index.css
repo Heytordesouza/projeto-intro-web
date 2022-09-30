@@ -5,23 +5,83 @@
 
 
 header{
-    display: block;
+    display: flex;
     background-color: black;
     height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 header p{
     color: white;
     text-align: center;
-    padding-top: 12px;
     font-family: arial;
     font-size: 25px;
 }
 
+.input{
+    display: flex;
+    height: 50px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
 
+.filme{
+    display: flex;
+    flex-direction: row;
+    width: 68vw;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.poster{
+    width: 20%;
+    height: 30%;
+    padding: 2%;
+}
+
+.bloco{
+    display: flex;
+}
+
+.titulo{
+    width: 15vw;
+    font-family: arial;
+    text-align: center;
+    justify-items: center;
+    padding-left: 10px;
+    font-size: 1.8vw;
+    padding-top: 3vh;
+}
+
+.tituloCentralizado{
+    padding-top: 0;
+    width: 15vw;
+    font-family: arial;
+    text-align: center;
+    justify-items: center;
+    padding-left: 10px;
+    font-size: 1.8vw;
+}
+
+ul{
+    width: 30vw;
+    font-family: arial;
+    font-size: 1.8vw;
+    margin-left: 5vw;
+}
 
 footer{
     background-color: black;
@@ -31,44 +91,39 @@ footer{
     font-size: 18px;
 }
 
-.input{
-    margin: 20px;
-    text-align: center;
-    font-size: 20px;
+@media screen and (min-device-width: 800px) and (max-device-width: 1200px) {
+
+    .filme{
+        width: 52vw;
+    }
+
+    .poster{
+        width: 20%;
+        height: 20%;
+        padding: 1vw;
+        padding-left: 2vw;
+    }
+
+    .bloco{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        gap: 1.4vh;
+        padding: 2vh;
+    }
+
+    .titulo{
+        width: 30vw;
+        font-size: 1.7vw;
+        padding-top: 0;
+    }
+
+    .tituloCentralizado{
+        width: 30vw;
+        font-size: 1.7vw;
+    }
 }
-
-.Poster{
-    display: table-cell;
-    width: 150px;
-    height: 200px;
-    float: left;
-    margin: 10px;
-}
-
-.Filme{
-    width: 600px;
-    margin: auto;
-    margin-bottom: 20px;
-    background-color: red;
-    display: table;
-}
-
-
-.Titulo{
-    font-family: arial;
-    text-align: center;
-    margin: 20px;
-}
-
-ul{
-    margin: 30px;
-    display: table-cell;
-    float: left;
-    width: 350px;
-    font-family: arial;
-    font-size: 18px;
-}
-
 
 
 
