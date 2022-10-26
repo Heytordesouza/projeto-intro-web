@@ -19,7 +19,7 @@ const filmes = [
     notaIMDB: 6.6,
     notaAcimaDe6: true,
     genero: "Ação, Aventura, Ficção Científica",
-    posterImg: "/Imagens/O Incrível Hulk.webp",
+    posterImg: "./Imagens/O Incrível Hulk.webp",
     linkTrailer: "https://www.youtube.com/watch?v=HomRcxrJISI",
     linkFilme: "https://www.netflix.com/br/title/70087537",
     streamingImg: "./Imagens/Netflix.gif"
